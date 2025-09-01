@@ -6,9 +6,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "test": "vitest run",
+    "test": "clarinet check && vitest run",
     "test:report": "vitest run -- --coverage --costs",
-    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\"",
+    "check": "clarinet check"
   },
   "author": "",
   "license": "ISC",
